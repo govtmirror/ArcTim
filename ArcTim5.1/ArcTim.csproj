@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFF4FB99-B396-454E-9526-8E40795A8935}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArcTim5._1</RootNamespace>
+    <AssemblyName>ArcTim5.1</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RegisterForComInterop>true</RegisterForComInterop>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="BeforeClean">
+    <Exec
+	  WorkingDirectory="$(CommonProgramFiles)\ArcGIS\bin"
+	  Command="esriRegasm.exe &quot;$(TargetPath)&quot; /p:Desktop /u /s"
+	Condition="Exists('$(TargetPath)')"/>
+  </Target>
+  <Target Name="AfterBuild">
+    <Exec
+	  WorkingDirectory="$(CommonProgramFiles)\ArcGIS\bin"
+	  Command="esriRegasm.exe &quot;$(TargetPath)&quot; /p:Desktop /s"/>
+  </Target>
+  -->
+  <ItemGroup>
+    <Compile Include="ArcTim5PropertiesMenu.cs" />
+    <Compile Include="ArcTim5Toolbar.cs" />
+    <Compile Include="ArcTimData.cs" />
+    <Compile Include="ArcTimUtilities.cs" />
+    <Compile Include="Command_MODFLOW2Tim.cs" />
+    <Compile Include="CreateNewShapefile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewShapefile.designer.cs">
+      <DependentUpon>CreateNewShapefile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateNewShapefileCommand.cs" />
+    <Compile Include="ExisitingShapefileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExisitingShapefileForm.designer.cs">
+      <DependentUpon>ExisitingShapefileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingShapefile2_constant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingShapefile2_constant.designer.cs">
+      <DependentUpon>ExistingShapefile2_constant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingShapefile2_fls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingShapefile2_fls.designer.cs">
+      <DependentUpon>ExistingShapefile2_fls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingShapefile2_hls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingShapefile2_hls.designer.cs">
+      <DependentUpon>ExistingShapefile2_hls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingShapefile2_rls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingShapefile2_rls.designer.cs">
+      <DependentUpon>ExistingShapefile2_rls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingShapefile2_well.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExistingShapefile2_well.designer.cs">
+      <DependentUpon>ExistingShapefile2_well.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExistingShapefileCommand.cs" />
+    <Compile Include="FileNameExists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileNameExists.designer.cs">
+      <DependentUpon>FileNameExists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelSettingsCommand.cs" />
+    <Compile Include="ModelSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelSettingsForm.Designer.cs">
+      <DependentUpon>ModelSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelUtilities.cs" />
+    <Compile Include="MODFLOW2Tim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODFLOW2Tim.designer.cs">
+      <DependentUpon>MODFLOW2Tim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODFLOWMenu.cs" />
+    <Compile Include="NewModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewModel.designer.cs">
+      <DependentUpon>NewModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewModelCommand.cs" />
+    <Compile Include="Number_of_Layers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Number_of_Layers.designer.cs">
+      <DependentUpon>Number_of_Layers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Open.designer.cs">
+      <DependentUpon>Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpenCommand.cs" />
+    <Compile Include="OutputSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutputSettings.designer.cs">
+      <DependentUpon>OutputSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OutputSettingsCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RasterExists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RasterExists.designer.cs">
+      <DependentUpon>RasterExists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RunTimML.cs" />
+    <Compile Include="SaveModel.cs" />
+    <Compile Include="ShapefileMenu.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreateNewShapefile.resx">
+      <DependentUpon>CreateNewShapefile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExisitingShapefileForm.resx">
+      <DependentUpon>ExisitingShapefileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingShapefile2_constant.resx">
+      <DependentUpon>ExistingShapefile2_constant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingShapefile2_fls.resx">
+      <DependentUpon>ExistingShapefile2_fls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingShapefile2_hls.resx">
+      <DependentUpon>ExistingShapefile2_hls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingShapefile2_rls.resx">
+      <DependentUpon>ExistingShapefile2_rls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExistingShapefile2_well.resx">
+      <DependentUpon>ExistingShapefile2_well.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileNameExists.resx">
+      <DependentUpon>FileNameExists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelSettingsForm.resx">
+      <DependentUpon>ModelSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODFLOW2Tim.resx">
+      <DependentUpon>MODFLOW2Tim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewModel.resx">
+      <DependentUpon>NewModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Number_of_Layers.resx">
+      <DependentUpon>Number_of_Layers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Open.resx">
+      <DependentUpon>Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutputSettings.resx">
+      <DependentUpon>OutputSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RasterExists.resx">
+      <DependentUpon>RasterExists.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="CreateMODFLOWGrid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\CreateMODFLOWGrid\bin\Debug\CreateMODFLOWGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.3DAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ADF.Local, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.ArcMapUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Carto, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesFile, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesGDB, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.DataSourcesRaster, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Display, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Framework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.GeoAnalyst, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geodatabase, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.Geometry, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.System, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="ESRI.ArcGIS.SystemUI, Version=10.1.0.0, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Karl.Tools, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2010\Projects\GFLOW\GFlowUtility\ShapeFileIO\Debug\Karl.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="ModflowToTimML, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\MODFLOWToTimML\bin\Debug\ModflowToTimML.exe</HintPath>
+    </Reference>
+    <Reference Include="ShapeFileIO, Version=1.1.2.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2010\Projects\GFLOW\GFlowUtility\ShapeFileIO\Debug\ShapeFileIO.dll</HintPath>
+    </Reference>
+    <Reference Include="ShapeLib1, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Visual Studio 2010\Projects\GFLOW\GFlowUtility\ShapeLib1\bin\Debug\ShapeLib1.dll</HintPath>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ESRIImportCache="ESRI.ArcGIS.ADF" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <EmbeddedResource Include="SaveModel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OpenCommand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ModelSettingsCommand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="OutputSettingsCommand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CreateNewShapefileCommand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExistingShapefileCommand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Command_MODFLOW2Tim.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ArcTables\ArcTables.csproj">
+      <Project>{5085b901-5d2e-4aa3-9391-df36f110236d}</Project>
+      <Name>ArcTables</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimLib\TimLib.csproj">
+      <Project>{bf62246d-ed75-4504-866d-961039da3533}</Project>
+      <Name>TimLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

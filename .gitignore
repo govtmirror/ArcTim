@@ -1,0 +1,7 @@
+*.txt
+*.pdb
+TimLib/obj/Debug/TimLib.dll
+*.svn-base
+*.cache
+*.tlog
+*.resources

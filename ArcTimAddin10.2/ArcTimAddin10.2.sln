@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcTimAddin10.2", "ArcTimAddin10.2\ArcTimAddin10.2.csproj", "{C37767BB-18E6-4743-A5EC-1D7F2B38F487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcTables", "..\ArcTables\ArcTables.csproj", "{5085B901-5D2E-4AA3-9391-DF36F110236D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArcTim", "..\ArcTim5.1\ArcTim.csproj", "{BFF4FB99-B396-454E-9526-8E40795A8935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimLib", "..\TimLib\TimLib.csproj", "{BF62246D-ED75-4504-866D-961039DA3533}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C37767BB-18E6-4743-A5EC-1D7F2B38F487}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C37767BB-18E6-4743-A5EC-1D7F2B38F487}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C37767BB-18E6-4743-A5EC-1D7F2B38F487}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C37767BB-18E6-4743-A5EC-1D7F2B38F487}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5085B901-5D2E-4AA3-9391-DF36F110236D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5085B901-5D2E-4AA3-9391-DF36F110236D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5085B901-5D2E-4AA3-9391-DF36F110236D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5085B901-5D2E-4AA3-9391-DF36F110236D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFF4FB99-B396-454E-9526-8E40795A8935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF4FB99-B396-454E-9526-8E40795A8935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF4FB99-B396-454E-9526-8E40795A8935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFF4FB99-B396-454E-9526-8E40795A8935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF62246D-ED75-4504-866D-961039DA3533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF62246D-ED75-4504-866D-961039DA3533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF62246D-ED75-4504-866D-961039DA3533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF62246D-ED75-4504-866D-961039DA3533}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>ArcTimAddin10.2</Name>
+  <AddInID>{aa4ff36a-9c0d-4ec8-8911-70cd9688e3fe}</AddInID>
+  <Description>Toolbar to develop TimML input files from ArcGIS data files.  Addin for ArcMap 10.2</Description>
+  <Version>1.0</Version>
+  <Image>Images\ArcTimAddin10.2.png</Image>
+  <Author>jmjohnson</Author>
+  <Company>USBR</Company>
+  <Date>1/26/2015</Date>
+  <Targets>
+    <Target name="Desktop" version="10.2" />
+  </Targets>
+  <AddIn language="CLR4.0" library="ArcTimAddin10._2.dll" namespace="ArcTimAddin10._2">
+    <ArcMap>
+      <Toolbars>
+        <Toolbar id="USBR_ArcTimAddin10._2_ArcTim_Toolbar" caption="ArcTim Toolbar" showInitially="false">
+          <Items>
+            <Menu refID="{d2f30b9c-bd65-4ced-9c38-cce5845bb3de}"/>
+            <Menu refID="{6eabdcb9-abba-435e-8192-3561cf3c4b8c}"/>
+            <Menu refID="{6132ad18-beed-451d-88af-509e3fb9b9ae}"/>
+            <Button refID="{40acb430-f604-4611-887a-24b7626529bc}"/>
+          </Items>
+        </Toolbar>
+      </Toolbars>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
